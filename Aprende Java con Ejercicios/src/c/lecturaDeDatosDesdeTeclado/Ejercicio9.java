@@ -1,6 +1,4 @@
 package c.lecturaDeDatosDesdeTeclado;
-
-
 import java.util.Scanner;
 
 public class Ejercicio9 {
