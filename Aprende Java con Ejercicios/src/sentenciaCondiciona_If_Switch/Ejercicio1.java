@@ -30,12 +30,10 @@ dia = s.nextLine();
 		System.out.println("A primera tienes Lenguaje de marcas.");
 	break;
 	
-		
 	case "jueves":	case "Jueves":
 		System.out.println("A primera tienes Lenguaje de marcas.");
 	break;
 	
-		
 	case "viernes":	case "Viernes":
 		System.out.println("A primera tienes Empresa e iniciativa empresarial.");
 	break; 
