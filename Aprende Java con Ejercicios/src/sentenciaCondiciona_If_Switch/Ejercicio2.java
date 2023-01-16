@@ -15,7 +15,7 @@ public class Ejercicio2 {
 	
 		//pedimos la hora y atribuimos la var
 	System.out.println("Introduzca la hora en números, sin determinantes y sin minutos.");
-	hora = Integer.parseInt(s.nextline());
+	hora = Integer.parseInt(s.next());
 		
 		//creamos el switch
 	switch (hora) {
