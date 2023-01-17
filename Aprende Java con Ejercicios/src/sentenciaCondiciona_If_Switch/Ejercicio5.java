@@ -12,25 +12,27 @@ public class Ejercicio5 {
 		//output: valor de x
 
 		//razonamiento: ax+b=0 -> x=-b/a
+		
 //declaramos las variables
-int a;
-int b;
-int x;
+double a;
+double b;
+double x;
 Scanner s = new Scanner(System.in);
 
 System.out.println("Este programa resuelve ecuaciones de primer grado del tipo ax + b = 0.");
 //pedimos al usuario introducir los valores
 System.out.println("Introduzca el valor de a:");
-a = s.nextInt();
+a = s.nextDouble();
 
 System.out.println("Introduzca el valor de b:");
-b = s.nextInt();
+b = s.nextDouble();
 
 //realizamos la operacion
-x = -(b)/a;
+
+x = (-b)/a;
 
 //damos el resultado
-System.out.println("x es igual a "+x+".");
+System.out.printf("x es igual a %.2f.\n",x);
 	}
 
 }
