@@ -27,7 +27,7 @@ h = s.nextDouble();
 t = Math.sqrt((2*h)/g);
 
 System.out.printf("Tarda en caer %.2f segundos.\n",t);
-	//comment
+	
 	}
 
 }
