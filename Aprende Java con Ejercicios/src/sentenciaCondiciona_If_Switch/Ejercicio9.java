@@ -29,13 +29,15 @@ b = s.nextDouble();
 System.out.println("introduzca el valor de \"c\" en numeros.");
 c = s.nextDouble();
 
-xSumando = (-b + Math.sqrt(Math.pow(b,2) - 4*a*c)) / (2*a);
 
-xRestando = (-b - Math.sqrt(Math.pow(b,2) - 4*a*c)) / (2*a);
+xSumando = (-(b) + Math.sqrt(Math.pow(b,2) - 4*a*c)) / (2*a);
+
+xRestando = (-(b) - Math.sqrt(Math.pow(b,2) - 4*a*c)) / (2*a);
 
 
-System.out.println(xSumando);
 System.out.println(xRestando);
+System.out.println(xSumando);
+
 	}
 
 }
