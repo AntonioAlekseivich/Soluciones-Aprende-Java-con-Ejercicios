@@ -67,6 +67,8 @@ public class Ejercicio8 {
 		media = (nota1 + nota2 + nota3) / 3;
 		System.out.printf("La media de las 3 notas es de %.2f.\n", media);
 
+		//if else if para decir la nota del boletin en funcion 
+		//de la nota medias
 		if(media<5){
 			System.out.println("Has suspendido...");
 		}else if(media>=5 && media<6) {
