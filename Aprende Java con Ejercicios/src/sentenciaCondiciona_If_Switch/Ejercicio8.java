@@ -2,12 +2,15 @@ package sentenciaCondiciona_If_Switch;
 
 import java.util.Scanner;
 
-public class Ejercicio7 {
+public class Ejercicio8 {
 
 	public static void main(String[] args) {
-		// Realiza un programa que calcule la media de tres notas
+		// Amplía el programa anterior para que diga la nota
+		// del boletín (insuficiente,
+		// suficiente, bien, notable o sobresaliente).
 
-		// declaramos las variables
+		// copiamos el codigo del ejercicio anterior
+
 		Scanner s = new Scanner(System.in);
 		double nota1;
 		double nota2;
@@ -64,6 +67,19 @@ public class Ejercicio7 {
 		media = (nota1 + nota2 + nota3) / 3;
 		System.out.printf("La media de las 3 notas es de %.2f.\n", media);
 
+		if(media<5){
+			System.out.println("Has suspendido...");
+		}else if(media>=5 && media<6) {
+			System.out.println("Tienes un suficiente.");
+		}else if(media>=6 && media<7) {
+			System.out.println("Tienes un bien.");
+		}else if(media>=7 && media<9) {
+			System.out.println("Tienes un notable");
+		}else if(media>=9 && media<10) {
+			System.out.println("Tienes un notable alto.¡Casi llegas al sobresaliente!");
+		}else{
+			System.out.println("¡Has sacado un sobresaliente!!");
+		}
 	}
 
 }
