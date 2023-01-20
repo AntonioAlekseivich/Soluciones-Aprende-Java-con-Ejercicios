@@ -24,7 +24,7 @@ public class Ejercicio10_4 {
 
 			//pedimos las variables
 			System.out.println("Introduce los datos solo con numeros.");
-			System.out.println("¿Quçe día naciste?");
+			System.out.println("¿Que día naciste?");
 			dia = s.nextInt();
 
 			System.out.println("¿Y en qué mes?");
@@ -158,12 +158,14 @@ public class Ejercicio10_4 {
 				}
 			break;
 
-			default:
+			default://todos los demas casos son valores invalidos de mes
 				System.out.println("El mes introducido no es un valor valido");
 				continue;
 				
 			}
-			System.out.println("Tu horoscopo es :"+horoscopo);
+			System.out.println("Tu horoscopo es "+horoscopo);
+			
+			break;
 		}
 	
 		
