@@ -22,43 +22,55 @@ public class Ejercicio02_6 {
 			switch (rollPalo) {
 			case 1:
 				palo = "Picas";
+				System.out.println(palo);
 			break;
 			case 2: 
 				palo = "Corazones";
+				System.out.println(palo);
 			break;
 			case 3:
 				palo = "Diamantes";
+				System.out.println(palo);
 			break;
 			case 4:
 				palo = "Tréboles";
+				System.out.println(palo);
 			break;
+			
 			}
+			
 			
 //sacamos el valor de la carta
 		rollCarta = (int)(Math.random()* 13 ) + 1;
 		
 			//separamos los casos que pueden ser caracteres de los numerales
-			if ((rollCarta == 1) || (rollCarta > 10)) 
-			{
-				Switch (rollCarta){
-					case 1:
+			if (rollCarta == 1) {
 						carta = "A";
-					break;
+						System.out.println(carta);
+			} else if (rollCarta > 10){
+				
+				switch(rollCarta) {
 					case 11:
 						carta = "J";
-					break;
+						System.out.println(carta);
+						break;
 					case 12:
 						carta = "Q";
-					break;
+						System.out.println(carta);
+						break;
 					case 13:
-						carta = "K";
+					carta = "K";
+					System.out.println(carta);
 					break;
 				}
-			} else {
-				carta = String.valueOf(rollCarta);
 				
+			}else {
+			carta = String.valueOf(rollCarta);
+			System.out.println(carta);
+			
 			}
-		
-		}	
-	}
+			
+			
+	}	
+}
 
