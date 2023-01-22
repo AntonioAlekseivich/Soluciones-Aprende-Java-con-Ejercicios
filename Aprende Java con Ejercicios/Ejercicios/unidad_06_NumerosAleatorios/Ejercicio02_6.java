@@ -15,6 +15,8 @@ public class Ejercicio02_6 {
 		String carta = "";//puede ser 4 casos o un numero del 2 al 10
 		int rollPalo;
 		int rollCarta;
+		//importante inicializar los string y despues concatenarlos, no asignarles una nueva variable dentro del bucle
+		//si les asignamos una nueva variable dentro del bucle, despues no podemos usarlos fuera del mismo
 		
 			
 
@@ -25,7 +27,7 @@ public class Ejercicio02_6 {
 		
 			//separamos los casos que pueden ser caracteres de los numerales
 			if (rollCarta == 1) {
-						carta += "A";
+						carta += "A";//+= para concatenar; importante no usar =
 						
 			} else if (rollCarta > 10){
 				
