@@ -11,6 +11,8 @@ int numeros;
 int counter = 0;
 int suma = 0;
 int media;
+int max = 100;
+int min = 199;
 //primero hay que hacer loop para imprimir los 50 numeros
 while(counter<50) {
 	numeros = (int)(Math.random()*99)+100;//asignamos un int aleatorio entre 100 y 99
@@ -18,10 +20,20 @@ while(counter<50) {
 	suma = suma += numeros;
 	System.out.print(numeros+" ");//los imprimimos
 	
+	if (max<numeros){
+		max = numeros;
+	}
+	if (min>numeros) {
+		min = numeros;
+	}
+	
 	
 }
+System.out.printf("\nNumeros impresos: "+counter);
 media = suma/counter;
 System.out.printf("\nla media de esos numeros es "+media);
+System.out.printf("\nEl maximo numero que se ha imprimo es %,d. Y el minimo es %,d.",max,min);
+
 
 
 	}
