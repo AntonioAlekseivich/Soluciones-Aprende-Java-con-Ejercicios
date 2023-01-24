@@ -13,36 +13,39 @@ public class Ejercicio06_6 {
 		//output: nº intentos
 				  //si es menor o mayor
 //variables
-		int numeroSecreto = (int)(Math.random()*100 )+ 1 ;
+		Scanner s = new Scanner(System.in);
+		int numeroSecreto = (int)(Math.random()*101 ) ;
 		int numeroIntroducido;
 		int intentos = 5;
 		
-		Scanner s = new Scanner(System.in);
 		
-			System.out.println("Adivina un numero entre 1 y 100, te doy 5 intentos.");
-		
+			System.out.println("Adivina un numero entre 1 y 100, te doy "+intentos+" intentos.");
+			
 		
 		while ( intentos > 0 ) {
-			numeroIntroducido = s.nextInt();
+			numeroIntroducido =  s.nextInt();
+			
+			
 			if (numeroIntroducido!=numeroSecreto) {
-	intentos = intentos - 1 ;
-	
-	System.out.println("Nope, ese numero no es.");
-	
-			if(numeroIntroducido > numeroSecreto) {
+				
+				intentos = intentos - 1 ;
+				System.out.println("Nope, ese numero no es.");
+				System.out.println("Te quedan "+intentos+" intentos.");
+				
+				
+				if(numeroIntroducido > numeroSecreto) {
 				System.out.println("Mi numero es menor");
-			} else {
+				
+				} else {
 				System.out.println("Mi numero es mayor");
-			
-	System.out.println("Te quedan "+intentos+" intentos.");
-	
-			}	
-			
-			} 
+				}	
+				
+				
+			} else {
+				System.out.println("¡Acertaste!");
+			}
 		}
 		
-		if (numeroIntroducido == numeroSecreto) {
-			System.out.println("¡Acertaste!");
-		}
+		
 	}
 }
