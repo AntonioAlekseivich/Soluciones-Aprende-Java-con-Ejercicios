@@ -21,7 +21,7 @@ public class Ejercicio09_6 {
 			 
 		
 		
-		System.out.println("Ya he sacado "+counter+" numeros, y por ultimo el "+numero);
+		System.out.println("He sacado "+counter+" numeros, y por ultimo el "+numero);
 		
 		
 
