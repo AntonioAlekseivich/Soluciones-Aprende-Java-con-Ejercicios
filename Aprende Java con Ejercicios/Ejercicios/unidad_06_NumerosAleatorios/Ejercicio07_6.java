@@ -58,6 +58,33 @@ public class Ejercicio07_6 {
 			m = "M";
 			System.out.printf("\nEquipo 1:"+cero+" "+uno+" "+dos+" "+m);
 		}
+		numeroPleno2 = (int)(Math.random()*4+1);
+		if (numeroPleno2 == 1) {
+			cero = "0";
+			uno = "1";
+			dos = "2";
+			m = "\u001B[31m"+"M"+"\u001B[0m";
+			
+			System.out.printf("	Equipo 2:"+cero+" "+uno+" "+dos+" "+m);
+		} else if (numeroPleno2 == 2) {
+			cero = "0";
+			uno = "1";
+			dos = "\u001B[31m"+"2"+"\u001B[0m";
+			m = "M";
+			System.out.printf("	Equipo 2:"+cero+" "+uno+" "+dos+" "+m);
+		}else if (numeroPleno2 == 3) {
+			cero = "0";
+			uno = "\u001B[31m"+"1"+"\u001B[0m";
+			dos = "2";
+			m = "M";
+			System.out.printf("	Equipo 2:"+cero+" "+uno+" "+dos+" "+m);
+		}else if (numeroPleno2 == 4) {
+			cero = "\u001B[31m"+"0"+"\u001B[0m";
+			uno = "1";
+			dos = "2";
+			m = "M";
+			System.out.printf("	Equipo 2:"+cero+" "+uno+" "+dos+" "+m);
+		}
 		
 	}
 }
