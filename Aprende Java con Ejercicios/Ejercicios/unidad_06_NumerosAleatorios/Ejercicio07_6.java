@@ -36,26 +36,27 @@ public class Ejercicio07_6 {
 			cero = "0";
 			uno = "1";
 			dos = "2";
-			m = "\033[91mM\033[39;49m";
+			m = "\u001B[31m"+"M"+"\u001B[0m";
 			
+			System.out.printf("\nEquipo 1:"+cero+" "+uno+" "+dos+" "+m);
 		} else if (numeroPleno1 == 2) {
 			cero = "0";
 			uno = "1";
-			dos = "\033[91m2\033[39;49m";
+			dos = "\u001B[31m"+"2"+"\u001B[0m";
 			m = "M";
-			System.out.printf("\nEquipo 1:  %3s  %3s  %3s   %3s",cero,uno,dos,m);
+			System.out.printf("\nEquipo 1:"+cero+" "+uno+" "+dos+" "+m);
 		}else if (numeroPleno1 == 3) {
 			cero = "0";
-			uno = "\033[91m1\033[39;49m";
+			uno = "\u001B[31m"+"1"+"\u001B[0m";
 			dos = "2";
 			m = "M";
-			System.out.printf("\nEquipo 1:  %3s  %3s  %3s   %3s",cero,uno,dos,m);
+			System.out.printf("\nEquipo 1:"+cero+" "+uno+" "+dos+" "+m);
 		}else if (numeroPleno1 == 4) {
-			cero = "\033[91m0\033[39;49m";
+			cero = "\u001B[31m"+"0"+"\u001B[0m";
 			uno = "1";
 			dos = "2";
 			m = "M";
-			System.out.printf("\nEquipo 1:  %3s  %3s  %3s   %3s",cero,uno,dos,m);
+			System.out.printf("\nEquipo 1:"+cero+" "+uno+" "+dos+" "+m);
 		}
 		
 	}
