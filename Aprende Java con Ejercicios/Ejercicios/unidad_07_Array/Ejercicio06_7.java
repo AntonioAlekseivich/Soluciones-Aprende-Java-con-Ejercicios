@@ -32,11 +32,12 @@ public class Ejercicio06_7 {
 		atribucionArray=13;
 		
 		for (int i = 14; i>0; i--) {//loop del 0 al 14; rotamos los valores
-			
-			numeros[i] = numeros[atribucionArray];//rotamos del 14 al 1
-			System.out.println("Array "+i+"="+numeros[i]);
-			atribucionArray--;
-		}
+
+			numeros[i] = numeros[i-1];//rotamos del 14 al 1
+
+
+			}
+		
 		numeros[0] = casillaExtra;//atribuimos el valor del array 0
 
 		System.out.println();//salto de linea
