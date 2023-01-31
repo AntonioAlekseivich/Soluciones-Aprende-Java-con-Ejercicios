@@ -1,7 +1,7 @@
-package unidad_06_NumerosAleatorios;
+package unidad_07_Array;
 import java.util.Scanner;
 
-public class Ejercicio11_6 {
+public class Ejercicio11_7 {
 
 	public static void main(String[] args) {
 		/* Realiza un programa que pida 10 números por teclado y que los almacene en
