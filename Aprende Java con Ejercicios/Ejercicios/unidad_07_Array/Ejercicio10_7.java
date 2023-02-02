@@ -16,7 +16,7 @@ necesario.*/
 		int contadorPar = 0;
 		int contadorImpar = 0;
 
-System.out.println("Numeros aleatorios: \n");
+		System.out.println("Numeros aleatorios: \n");
 
 		for (int i=0; i<20; i++) {
 			numeros[i] = (int)(Math.random()*100);//creamos los num aleatorios
@@ -41,20 +41,20 @@ System.out.println("Numeros aleatorios: \n");
 			numeros[i] = impares[u];
 			u++;
 		}
-		
-System.out.println("\nNumeros pares: \n");//los imprimimos
+
+		System.out.println("\nNumeros pares: \n");//los imprimimos
 
 		for (int i=0; i<20; i++) {
 			System.out.println(pares[i]);
 		}
-		
-System.out.println("\nNumeros impares: \n");
-		
+
+		System.out.println("\nNumeros impares: \n");
+
 		for (int i=0; i<20; i++) {
 			System.out.println(impares[i]);
 		}
-		
-System.out.println("\nNumeros ordenados: \n");
+
+		System.out.println("\nNumeros ordenados: \n");
 
 		for (int i=0; i<20; i++) {
 			System.out.println(numeros[i]);
