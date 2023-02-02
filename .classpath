@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Aprende Java con Ejercicios/Ejercicios"/>
+	<classpathentry kind="src" path="Ejercicios"/>
+	<classpathentry kind="src" path="Ejercicios/unidad_08_Funciones"/>
+	<classpathentry kind="src" path="Ejercicios/unidad_08_Funciones/funciones_Ejercicios01_al_14"/>	
+	<classpathentry kind="output" path="bin"/>
+</classpath>
