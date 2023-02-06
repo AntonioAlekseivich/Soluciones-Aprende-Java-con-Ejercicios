@@ -11,19 +11,9 @@ public class Ejercicio1_al_14_08 {
 	 * */
 	
 	public static boolean esCapicua(int x) {
-		int cifras [] = new int [10];
-		int cifrasInv [] = new int [10];
-		
-		
-		for (int i = 0; i < 10; i++) {
-			
-			if(cifras == cifrasInv) {
-				return true;
-			} else {
-				return false;
-			}
-			
+		    String numberString = Integer.toString(x);
+		    String reverseString = new StringBuilder(numberString).reverse().toString();
+		    return numberString.equals(reverseString);
 		}
-		
 	}
-}
+
