@@ -1,42 +1,14 @@
 package unidad_08_Funciones;
 
-public class TestFunciones {
+import static org.junit.jupiter.api.Assertions.*;
 
-	public static void main(String[] args) {
-		// esCapicua
+import org.junit.jupiter.api.Test;
 
-		int x = 1312;
-		int nDigitos = 0;
+class TestFunciones {
 
-		//calculamos cuantos digitos tiene x
-		int temp = x;
-
-		while(temp>0) {
-			temp = temp/10;
-			nDigitos++;
-		}
-
-		int [] digitos = new int [nDigitos];
-		
-		digitos[0] = x;
-		
-		for (int i=0; i < nDigitos; i++) {//atribuimos los digitos de x al array digitos
-			digitos [i] = x%10;
-			x = x/10;
-		}
-
-		for ( int i=0 ; i< nDigitos; i++) {
-			System.out.println(digitos[i]);
-		}
-		
-		System.out.println();
-		
-		System.out.println(nDigitos);
-		
-		System.out.println();
-		
-		System.out.println(x);
-
+	@Test
+	void esCapicua() {
+		assertEquals(Ejercicio01_al_14_08.esCapicua(1331),true);
 	}
 
 }
