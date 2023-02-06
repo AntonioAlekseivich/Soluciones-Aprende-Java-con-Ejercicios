@@ -40,6 +40,24 @@ public class Ejercicio01_al_14_08 {
 		} else {
 			return false;
 		}
-		}
 	}
+	
+	/*: Devuelve verdadero si el número que se pasa como parámetro es primo y falso en caso contrario.
+	 * 
+	 * @param x un número entero positivo
+	 * @return <code>true</code> si el número es primo
+	 * @return <code>false</code> en caso contrario
+	 * 
+	 * */
+	
+	public static boolean esPrimo(int x) {
+
+		for (int i=1; i<=x; i++) {//recorremos todos los num posibles
+			if(x%i==0 && i != 1 && i != x) {//Si al div entre ese numero el resto es 0, no es 1, y no es el mismo numero
+				return true;//devolvemos true
+			}
+		}
+		return false;//si no se entro en el if, es false
+	}
+}
 

@@ -6,7 +6,7 @@ public class BuildingClass {
 
 	public static void main(String[] args) {
 		// esCapicua
-
+/*
 		int x = 2441;//el numero a comprobar
 		
 		
@@ -37,7 +37,23 @@ public class BuildingClass {
 		} else {
 			System.out.println("false");
 		}
-
+*/
 		
+		//esPrimo
+		int x = 8;//el num que vamos a comprobar
+		
+		boolean esPrimo = false;//inicializamos el boolean
+		
+		for (int i=1; i<=x; i++) {//recorremos todos los num posibles
+			
+			if(x%i==0 && i != 1 && i != x) {//Si al div entre ese numero el resto es 0, no es 1, y no es el mismo numero
+				esPrimo=true;//es primo y dejamos de comprobar
+				break;
+			}
+			
+		esPrimo = false;//en caso contrario es false
+		}
+		
+		System.out.println(esPrimo);
 	}
 }

@@ -10,5 +10,10 @@ class TestFunciones {
 	void esCapicua() {
 		assertEquals(Ejercicio01_al_14_08.esCapicua(1331),true);
 	}
+	
+	@Test
+	void esPrimo() {
+		assertEquals(Ejercicio01_al_14_08.esPrimo(7),false);
+	}
 
 }
