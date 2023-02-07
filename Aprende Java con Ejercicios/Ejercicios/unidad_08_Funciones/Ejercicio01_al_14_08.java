@@ -54,10 +54,10 @@ public class Ejercicio01_al_14_08 {
 
 		for (int i=1; i<=x; i++) {//recorremos todos los num posibles
 			if(x%i==0 && i != 1 && i != x) {//Si al div entre ese numero el resto es 0, no es 1, y no es el mismo numero
-				return true;//devolvemos true
+				return false;//devolvemos false
 			}
 		}
-		return false;//si no se entro en el if, es false
+		return true;//si no se entro en el if, es true
 	}
 }
 

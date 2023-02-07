@@ -13,7 +13,7 @@ class TestFunciones {
 	
 	@Test
 	void esPrimo() {
-		assertEquals(Ejercicio01_al_14_08.esPrimo(7),false);
+		assertEquals(Ejercicio01_al_14_08.esPrimo(7),true);
 	}
 
 }
