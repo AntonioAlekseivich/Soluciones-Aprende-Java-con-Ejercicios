@@ -21,21 +21,6 @@ public class Ejercicio01_al_14_08 {
 		return digitos;
 	}
 
-	/*Concatenamos un array a un String
-	 * 
-	 * @param int arr [] array a concatenar
-	 * 
-	 * @return String igual al array
-	 */
-	public static String arrayToString (int x[]) {
-		String resultado = "";
-		for(int i = 0; i<x.length; i++) {
-			 resultado += x [i];
-		}
-		return resultado;
-	}
-	
-	
 	/* 01_Devuelve verdadero si el número que se pasa como parámetro es capicúa y falso en caso contrario.
 	 * 
 	 * @param x un número entero positivo
@@ -189,7 +174,6 @@ public class Ejercicio01_al_14_08 {
 		} return -1;
 	}
 
-
 	/* 09_Le quita a un número n dígitos por detrás (por la derecha).
 	 * 
 	 * @param int x un número entero positivo 
@@ -234,15 +218,65 @@ public class Ejercicio01_al_14_08 {
 	 * @return int con x concatenado 
 	 * 
 	 * */	
-	/*public static int pegaPorDetras (int x, int n) {
-		int [] digitos = (Ejercicio01_al_14_08.getArray(x));//Array de los digitos
-		String resultado = "";//para poder concatenar el resultado
-		
-		for(int i = 0; i<digitos.length; i++) {
-			resultado += digitos [i];
-		}
+	public static int pegaPorDetras (int x, int n) {
+
+		String resultado = "" + x;//para poder concatenar el resultado
+		resultado += n;
 		return Integer.parseInt(resultado);
-	}*/
+	}
+
+	/* 12_Añade un dígito a un número por delante
+	 * 
+	 * @param int x un número entero positivo 
+	 * @param int n digito que se va a pegar
+	 * 
+	 * @return int con x concatenado 
+	 * 
+	 * */	
+	public static int pegaPorDelante (int x, int n) {
+		String resultado = "" + x;//para poder concatenar el resultado
+		resultado = n + resultado;
+		return Integer.parseInt(resultado);
+	}
+
+	/* 13_Toma como parámetros las posiciones inicial y final
+	 *	dentro de un número y devuelve el trozo correspondiente
+	 * 
+	 * @param int x un número entero positivo 
+	 * @param int a primera posicion
+	 * @param int b segunda posicion
+	 * 
+	 * @return int del trozo
+	 * 
+	 * */	
+	public static int trozoDeNumero (int x, int a, int b) {
+
+		String resultado = "";
+		int [] digitos = (Ejercicio01_al_14_08.getArray(x));
+
+		if (digitos.length<b || a>b) {//comprobamos que los valores sean validos
+			return -1;
+		}else {
+			for(int i=(a-1); i<=(b-1); i++) {//recorremos los numeros validos
+				resultado += digitos[i];//concatenamos
+			}
+			return Integer.parseInt(resultado);
+		}
+	}
+
+	/* 14_Pega dos números para formar uno.
+	 * 
+	 * @param int x un número entero positivo 
+	 * @param int u otro num entero positivo
+
+	 * @return int concatenado de x y u
+	 * 
+	 * */	
+	public static int juntaNumeros (int x, int u) {
+		String num = Integer.toString(x);//parsing a string
+		num += u ;//concatenamos u
+		return Integer.parseInt(num);//devolvemos en int
+	}
 }
 
 

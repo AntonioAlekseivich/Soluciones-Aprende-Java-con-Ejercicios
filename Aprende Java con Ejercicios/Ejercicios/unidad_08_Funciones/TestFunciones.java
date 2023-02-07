@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class TestFunciones {
 
 	@Test
-	void getArray() {//codigo escrito por chatGPT
+	void getArray() {//este primer test lo escribio chatGPT.
 	    int[] actual = Ejercicio01_al_14_08.getArray(1436);
 	    int[] expected = {1, 4, 3, 6};
 	    assertArrayEquals(expected, actual);}
@@ -65,5 +65,25 @@ class TestFunciones {
 		assertEquals(Ejercicio01_al_14_08.quitaPorDelante(6439823, 1), 439823);
 	}
 	
+	@Test
+	void pegaPorDetras() {
+		assertEquals(Ejercicio01_al_14_08.pegaPorDetras(6439823, 6), 64398236);
+	}
 	
+	@Test
+	void pegaPorDelante() {
+		assertEquals(Ejercicio01_al_14_08.pegaPorDelante(64398, 436), 43664398);
+	}
+	
+	@Test
+	void trozoDeNumero() {
+		assertEquals(Ejercicio01_al_14_08.trozoDeNumero(6439832, 2, 6), 43983);
+		assertEquals(Ejercicio01_al_14_08.trozoDeNumero(6439832, 3, 9), -1);
+		assertEquals(Ejercicio01_al_14_08.trozoDeNumero(6439832, 5, 4), -1);
+	}
+	
+	@Test
+	void juntaNumeros() {
+		assertEquals(Ejercicio01_al_14_08.juntaNumeros(6, 436), 6436);
+	}
 }
