@@ -3,6 +3,8 @@ package unidad_09_ProgramacionOrientadaAObjetos.Ejercicio04;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+import unidad_08_Funciones.Ejercicio01_al_14_08;
+
 class FraccionTest {
 
 	@Test
@@ -23,5 +25,8 @@ class FraccionTest {
 		int [] result = Fraccion.simplifica(3,9);
         assertArrayEquals(expected, result);
 	}
-
+	@Test
+	void multiplica() {
+		assertEquals(Fraccion.multiplica(6,5),30);
+	}
 }

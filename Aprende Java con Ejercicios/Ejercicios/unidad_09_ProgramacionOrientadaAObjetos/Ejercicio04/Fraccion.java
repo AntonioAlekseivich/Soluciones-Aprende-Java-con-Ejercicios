@@ -29,5 +29,12 @@ public class Fraccion {
 			    int[] result = {numerador / gcd, denominador / gcd};
 			    return result;
 		}
+		//multiplica
+		public static int multiplica(int numerador, int denominador ) {
+		int result;
+		result = numerador * denominador;
+		return result;
+			}
+		
 		
 }
