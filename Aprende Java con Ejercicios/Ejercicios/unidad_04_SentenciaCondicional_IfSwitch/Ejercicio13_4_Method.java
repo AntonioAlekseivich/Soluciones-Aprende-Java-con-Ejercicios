@@ -6,7 +6,7 @@ public class Ejercicio13_4_Method {
 
 		// Escribe un programa que ordene tres números enteros introducidos por teclado.
 		//@param: int  tNum1, int tNum2, int tNum3
-		//@output: 1 2 3
+		//@output: param ordenados
 
 		int num1;
 		int num2;
