@@ -17,6 +17,9 @@ public class Ejercicio15_4 {
 		caracter = s.next();
 		System.out.println("Introduzca una direccion");
 		direccion = s.nextInt();
+		
+	 String output = piramide(caracter,direccion);
+	 System.out.println(output);
 	}
 	public static String piramide(String caracter, int direccion) {
 		/*@Param String caracter;
@@ -24,7 +27,45 @@ public class Ejercicio15_4 {
 		 * @Output String piramide;
 		 */
 		if( direccion == 1) {
-			String piramide = "";
+			String piramide = "    "+caracter+"\n" +
+					                    "   "+caracter+caracter+caracter+"\n" +
+					                    "  "+caracter+caracter+caracter+caracter+caracter+"\n" +
+					                    " "+caracter+caracter+caracter+caracter+caracter+caracter+caracter+"\n" +
+					                    ""+caracter+caracter+caracter+caracter+caracter+caracter+caracter+caracter+caracter+"";
+			return piramide;
+		} else if (direccion == 2){
+			String piramide = ""+caracter+"\n" +
+					                    ""+caracter+caracter+caracter+"\n" +
+					                    ""+caracter+caracter+caracter+caracter+caracter+"\n" +
+					                    ""+caracter+caracter+caracter+caracter+caracter+caracter+caracter+"\n" +
+					                    ""+caracter+caracter+caracter+caracter+caracter+caracter+caracter+caracter+caracter+"\n" +
+					                    ""+caracter+caracter+caracter+caracter+caracter+caracter+caracter+"\n" +
+					                    ""+caracter+caracter+caracter+caracter+caracter+"\n" +
+					                    ""+caracter+caracter+caracter+"\n" +
+					                    ""+caracter+"\n" ;
+			return piramide;
+		} else if (direccion == 3){
+			String piramide = "        "+caracter+"\n" +
+					                    "      "+caracter+caracter+caracter+"\n" +
+					                    "    "+caracter+caracter+caracter+caracter+caracter+"\n" +
+					                    "  "+caracter+caracter+caracter+caracter+caracter+caracter+caracter+"\n" +
+					                    ""+caracter+caracter+caracter+caracter+caracter+caracter+caracter+caracter+caracter+"\n" +
+					                    "  "+caracter+caracter+caracter+caracter+caracter+caracter+caracter+"\n" +
+					                    "    "+caracter+caracter+caracter+caracter+caracter+"\n" +
+					                    "      "+caracter+caracter+caracter+"\n" +
+					                    "        "+caracter+"\n" ;
+			return piramide;
+		}else if( direccion == 4) {
+				String piramide = ""+caracter+caracter+caracter+caracter+caracter+caracter+caracter+caracter+caracter+"\n" +
+						" "+caracter+caracter+caracter+caracter+caracter+caracter+caracter+"\n" +
+						"  "+caracter+caracter+caracter+caracter+caracter+"\n" +
+						"   "+caracter+caracter+caracter+"\n" +
+						 "    "+caracter+"\n" ;
+				return piramide;
+		}else {
+		
+			String piramide = "valor invalido";
+			return piramide;
 		}
 	}
 }
