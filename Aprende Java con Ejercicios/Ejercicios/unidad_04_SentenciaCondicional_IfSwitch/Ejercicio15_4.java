@@ -15,7 +15,11 @@ public class Ejercicio15_4 {
 		int direccion;
 		System.out.println("Introduzca un caracter:");
 		caracter = s.next();
-		System.out.println("Introduzca una direccion");
+		System.out.printf("Escoja una direccion:\n"
+				+ "1.-Up\n"
+				+ "2.-Right\n"
+				+ "3.-Left\n"
+				+ "4.-Down\n");
 		direccion = s.nextInt();
 		
 	 String output = piramide(caracter,direccion);
