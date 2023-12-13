@@ -3,7 +3,7 @@ package unidad_02_Variables;
 public class Ejercicio08_2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 char a;
 char b;
 char c;
