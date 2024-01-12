@@ -13,24 +13,23 @@ public class Ejercicio05_7 {
 		Scanner s = new Scanner(System.in);
 		
 		int [] numeros = new int [10];//creamos el array
-		int atribucionArray = 0;//el numero que indica a que casilla del array atribuir el valor
-		
-		int minimo = 2147483647;
+	
+		int minimo = 0;
 		int maximo = 0;
 		
-for (int i = 1; i<11; i++) {//loop del 1 al 10
+for (int i = 0; i<10; i++) {//loop del 1 al 10
 	
 	System.out.println("Introduzca el numero nº "+i);
 	
-	numeros[atribucionArray] = s.nextInt();//atribuimos el valor al array
+	numeros[i] = s.nextInt();//atribuimos el valor al array
 	
-	if (numeros[atribucionArray] >= maximo) {//comprobamos los maximos y minimos
-		maximo = numeros[atribucionArray];
+	if (numeros[i] >= maximo) {//comprobamos los maximos y minimos
+		maximo = numeros[i];
 	} 
-	if (numeros[atribucionArray] <= minimo) {
-		minimo = numeros[atribucionArray];
+	if (numeros[i] <= minimo) {
+		minimo = numeros[i];
 	}
-	atribucionArray++;
+
 }
 
 for (int i = 0; i < 10; i++) {//imprimimos el array contando desde 9 hacia atras.
