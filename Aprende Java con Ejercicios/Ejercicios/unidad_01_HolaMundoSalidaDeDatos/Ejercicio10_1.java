@@ -3,7 +3,7 @@ package unidad_01_HolaMundoSalidaDeDatos;
 public class Ejercicio10_1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// 
 		System.out.println("\033[30m##########\033[39;49m\033[93m*\033[39;49m\033[30m##########\033[39;49m");
 		System.out.println("\033[30m#########\033[39;49m\033[93m***\033[39;49m\033[30m#########\033[39;49m");
 		System.out.println("\033[30m########\033[39;49m\033[93m*****\033[39;49m\033[30m########\033[39;49m");

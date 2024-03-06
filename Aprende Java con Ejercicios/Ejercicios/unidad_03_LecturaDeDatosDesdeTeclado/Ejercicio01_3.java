@@ -5,7 +5,7 @@ public class Ejercicio01_3 {
 	public static void main(String[] args) {
 		
 		
-		// TODO Auto-generated method stub)
+		// 
 Scanner s = new Scanner(System.in);
 	System.out.println("Introduce el primer número.");
 

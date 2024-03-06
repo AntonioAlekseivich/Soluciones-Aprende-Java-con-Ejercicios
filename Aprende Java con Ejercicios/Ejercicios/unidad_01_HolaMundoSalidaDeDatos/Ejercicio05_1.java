@@ -3,7 +3,7 @@ package unidad_01_HolaMundoSalidaDeDatos;
 public class Ejercicio05_1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// 
 		System.out.printf("%5s  %-10s  %-10s  %-10s  %-10s  %-10s  \n","","Lunes","Martes","Miercoles","Jueves","Viernes");
 		System.out.println("--------------------------------------------------");
 		System.out.printf("%3.2f  %-10s  %-10s  %-10s  \033[91m%-10s\033[39;49m  %-10s \n",15.45,"Libre","Libre","Libre","LMS","Libre");
