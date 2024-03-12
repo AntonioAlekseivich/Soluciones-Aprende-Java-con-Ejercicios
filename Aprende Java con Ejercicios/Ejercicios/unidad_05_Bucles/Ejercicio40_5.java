@@ -10,28 +10,52 @@ mensaje de error.
          */
         System.out.println("Por favor, introduzca la altura del rombo:");
         int altura = Methods.pedirNumImparMayorOIgualA3();
-        for (int i = 0; i < altura; i++) {//Recorremos la altura
 
-            if(i<altura/2){//si estamos en la primera mitad
-                for (int j = 0; j < altura; j++) {//recorremos la anchura
-                    if (j >= i && j <= altura - i - 1) {
-                        System.out.print("*");
-                    } else {
-                        System.out.print(" " );
-                    }
-                }
-            }
-            else{//Si estamos en la segunda mitad
-                for (int j = 0; j < altura; j++) {//recorremos la anchura
-                    if (j <= i && j >= altura - i - 1) {
-                        System.out.print("*");
-                    } else {
-                        System.out.print(" " );
-                    }
+        // Parte superior del rombo
+        for (int i = 1; i <= altura / 2 + 1; i++) {
 
+            if (i == 1) {
+                for (int j = 0; j < altura; j++) {
+                    if (j == altura / 2)
+                        System.out.print("*");
+                    else
+                        System.out.print(" ");
                 }
+
+            } else {
+                for (int j = 0; j < altura / 2 + 1 - i; j++) {
+                    System.out.print(" ");
+                }
+                System.out.print("*");
+                for (int j = 0; j < 2 * i - 3; j++) {
+                    System.out.print(" ");
+                }
+                System.out.print("*");
             }
             System.out.println();
         }
+
+        // Parte inferior del rombo
+        for (int i = altura / 2; i >= 1; i--) {
+
+
+
+                for (int j = 0; j < altura / 2 + 1 - i; j++) {
+                    System.out.print(" ");
+                }
+                System.out.print("*");
+
+                if (i == 1) {
+                    System.out.print(" ");
+                } else {
+                    for (int j = 0; j < 2 * i - 3; j++) {
+                        System.out.print(" ");
+                    }
+                    System.out.print("*");
+                    System.out.println();
+                }
+            }
+        }
     }
-}
+
+

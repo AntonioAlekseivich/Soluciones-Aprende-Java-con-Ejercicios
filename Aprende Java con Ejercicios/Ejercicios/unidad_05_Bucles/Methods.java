@@ -22,10 +22,14 @@ public class Methods {
         return esPrimo;
     }
 
+
+
     public static int pedirInt() {
+
         Scanner sInt = new Scanner(System.in);
         return sInt.nextInt();
     }
+
 
     public static int factorial(int n) {
         int factorial = n;
@@ -36,16 +40,16 @@ public class Methods {
     }
 
     /**
-     * Valida que un valor introducido por teclado este
+     * Válida que un valor introducido por teclado este
      * comprendido en un tramo determinado.
-     * Valores limites incluidos.
+     * Valores límite incluidos.
      *
      * @param: int a: valor inicial
      * @param:int b: valor final
      * @return:int input: Valor comprendido entre esos 2.
      */
     public static int inputBetween2Num(int a, int b) {
-        int input = 0;
+        int input;
         do {
 
             input = pedirInt();
@@ -71,7 +75,7 @@ public class Methods {
     }
 
     public static int pedirNumImparMayorOIgualA3() {
-        int num = 0;
+        int num;
         do {
             num = Methods.pedirInt();
 
@@ -81,4 +85,6 @@ public class Methods {
         } while (num < 3 || Methods.esPar(num));
         return num;
     }
+
+
 }
