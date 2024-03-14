@@ -10,13 +10,14 @@ public class Ejercicio44_5 {
         primero admite números más largos.
         */
         Methods.soutPedirInt();
-        int num = Methods.pedirInt();
+        long num = Methods.pedirInt();
         System.out.println("Introduzca la posición donde quiere insertar:");
         int posicion = Methods.pedirInt();
         System.out.println("Introduzca el dígito que quiere insertar:");
         int digito = Methods.pedirInt();
 
-
+        long resultado = Methods.insertarDigito(num,posicion,digito);
+        System.out.println("El número resultante es "+resultado);
 
     }
 

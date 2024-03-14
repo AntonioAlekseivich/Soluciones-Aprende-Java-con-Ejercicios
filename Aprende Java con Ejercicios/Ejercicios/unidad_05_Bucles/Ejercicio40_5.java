@@ -9,7 +9,8 @@ sea un número impar mayor o igual a 3, en caso contrario se debe mostrar un
 mensaje de error.
          */
         System.out.println("Por favor, introduzca la altura del rombo:");
-        int altura = Methods.pedirNumImparMayorOIgualA3();
+
+        int altura = Methods.pedirNumImparMayorOIgualAUnNumero(3);
 
         // Parte superior del rombo
         for (int i = 1; i <= altura / 2 + 1; i++) {
