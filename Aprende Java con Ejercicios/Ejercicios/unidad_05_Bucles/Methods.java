@@ -143,4 +143,23 @@ public class Methods {
         return contiene;
 
     }
+
+    /**
+     * Counts the numer of ocurrences of a digit inside a long
+     * @param num
+     * @param digito
+     * @return ocurrences of the digit
+     */
+    public static int cuentaOcurrencias(long num, int digito){
+        String sNum= ""+num;
+        int ocurrencia=0;
+
+        for (int i = 0; i < sNum.length(); i++) {
+            if(Character.getNumericValue(sNum.charAt(i))==digito) {
+                ocurrencia++;
+
+            }
+        }
+    return ocurrencia;
+    }
 }
