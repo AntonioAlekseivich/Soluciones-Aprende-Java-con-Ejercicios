@@ -162,4 +162,36 @@ public class Methods {
         }
     return ocurrencia;
     }
+
+    public static void pintarRectangulo(int anchura, int altura){
+        for (int i = 0; i < altura; i++) {
+            if(i==0||i==altura-1)
+                System.out.println("*".repeat(anchura));
+            else
+            System.out.println("*"+" ".repeat(anchura-2)+"*");
+        }
+
+    }
+
+    /**
+     * Takes a long and for each digit, if it is even, substracts 1,
+     * else, adds 1
+     * @param  numero
+     * @return numero dislocated
+     */
+    public static long dislocarNumero(long numero){
+        String num= ""+ numero;
+        String result="";
+
+        for (int i = 0; i < num.length(); i++) {
+            if(esPar(Character.getNumericValue(num.charAt(i))))
+                result+=Character.getNumericValue(num.charAt(i))+1;
+            else
+                result+=Character.getNumericValue(num.charAt(i))-1;
+        }
+        return Long.parseLong(result);
+
+    }
+
 }
+
