@@ -6,6 +6,6 @@ public class Gato extends Mamifero{
 				this.nombre = p;
 			}
 	void trepa() {}
-	void araña() {}
+	void arania() {}
 	void maulla() {}
 }

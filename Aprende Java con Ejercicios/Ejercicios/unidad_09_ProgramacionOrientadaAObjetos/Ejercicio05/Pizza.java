@@ -11,7 +11,7 @@ Sobre cada pizza se necesita saber el tamaño - mediana o familiar - el tipo - m
  El siguiente código del programa principal debe dar la salida que se muestra:*/
 	
 	//Atributos
-	private String [] tamaño = {"mediana","familiar"};
+	private String [] tamanio = {"mediana","familiar"};
 
 	private String [] tipo = {"margarita", "cuatro quesos","funghi"};
 		
