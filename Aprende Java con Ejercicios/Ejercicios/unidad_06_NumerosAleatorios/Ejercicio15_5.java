@@ -1,4 +1,5 @@
 package unidad_06_NumerosAleatorios;
+
 /*
 Realiza un generador de melodía con las siguientes condiciones:
 a) Las notas deben estar generadas al azar. Las 7 notas son do, re, mi, fa, sol,
@@ -12,18 +13,49 @@ d) La última nota de la melodía debe coincidir con la primera.
  */
 public class Ejercicio15_5 {
     public static void main(String[] args) {
+        //TODO Para tener en cuenta que la ultima nota es igual a la primera *done
+        //Hay que sacar el codigo de los metodos
+        //queda un void largo, pero funciona
 
-   String sNota = generarNota();
-        do{
+        String sNota = "";
+        String compas;
+        String melodia = "";
+        int iNota = 0, iNotaPrimera = 0, iNotaUltima = 0;
+        int contadorNotas = 0;
 
-        }while()
+        do {//Bucle de la melodia
+
+            compas= "";//Reseteamos el compas
+            for (int i = 0; i < 4; i++) {//Bucle del compas
+
+                iNota = Methods.numAleatorioEnRango(1, 7);//Pillamos la nota
+                sNota=atribuirNota(iNota);
+
+                if (contadorNotas==0) {//Pillamos la primera nota de la melodia
+                    iNotaPrimera = iNota;;
+                }
+                contadorNotas++;
+
+                if (i == 3)//Pillamos la ultima nota del compas
+                    iNotaUltima = iNota;
+
+                if(contadorNotas==28)//Si estamos en la ultima nota
+                    sNota=atribuirNota(iNotaPrimera);//Nos aseguramos que sea igual a la primera
+
+                compas += sNota + " ";
+            }
+
+            melodia += compas + "|";
+
+
+        } while(iNotaPrimera!=iNotaUltima&&contadorNotas<28);
+
+        System.out.println(melodia);
     }
-    private static String generarNota(){
+    private static String atribuirNota(int iNota){
         String sNota="";
-        int iNota=0;
 
-        iNota=Methods.numAleatorioEnRango(1,7);
-        switch (iNota){
+        switch (iNota) {
             case 1:
                 sNota = "do";
                 break;
@@ -49,13 +81,6 @@ public class Ejercicio15_5 {
                 System.out.println("error");
         }
         return sNota;
-    }
 
-    private static String generarCompas(){
-        String compas = "";
-        for (int i = 0; i < 4; i++) {
-            compas += generarNota()+" |";
-        }
-        return compas;
     }
 }
