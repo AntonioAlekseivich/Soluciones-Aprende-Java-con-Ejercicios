@@ -3,7 +3,7 @@ package unidad_08_Funciones;
 
 public class Ejercicio01_al_14_08 {
 
-	/*Metodo para pasar los digitos de un int a un array, se usa mucho.
+	/**Metodo para pasar los digitos de un int a un array, se usa mucho.
 	 * 
 	 * @param int x 
 	 * return digitos
@@ -21,7 +21,7 @@ public class Ejercicio01_al_14_08 {
 		return digitos;
 	}
 
-	/* 01_Devuelve verdadero si el número que se pasa como parámetro es capicúa y falso en caso contrario.
+	/** 01_Devuelve verdadero si el número que se pasa como parámetro es capicúa y falso en caso contrario.
 	 * 
 	 * @param x un número entero positivo
 	 * @return <code>true</code> si el número es primo
@@ -39,7 +39,7 @@ public class Ejercicio01_al_14_08 {
 		}
 	}
 
-	/* 02_Devuelve verdadero si el número que se pasa como parámetro es primo y falso en caso contrario.
+	/** 02_Devuelve verdadero si el número que se pasa como parámetro es primo y falso en caso contrario.
 	 * 
 	 * @param x un número entero positivo
 	 * @return <code>true</code> si el número es primo
@@ -57,7 +57,7 @@ public class Ejercicio01_al_14_08 {
 	}
 
 
-	/* 03_Devuelve el menor primo que es mayor al número que se pasa como parámetro.
+	/** 03_Devuelve el menor primo que es mayor al número que se pasa como parámetro.
 	 * 
 	 * @param x un número entero positivo
 	 * @return int primo siguiente al param
@@ -76,7 +76,7 @@ public class Ejercicio01_al_14_08 {
 	}
 
 
-	/* 04_Dada una base y un exponente devuelve la potencia.
+	/** 04_Dada una base y un exponente devuelve la potencia.
 	 * 
 	 * @param x un número entero positivo de base
 	 * @param x un número entero positivo de exponente
@@ -91,7 +91,7 @@ public class Ejercicio01_al_14_08 {
 	}
 
 
-	/* 05_Cuenta el número de dígitos de un número entero.
+	/** 05_Cuenta el número de dígitos de un número entero.
 	 * 
 	 * @param x un número entero positivo 
 	 * 
@@ -110,7 +110,7 @@ public class Ejercicio01_al_14_08 {
 	}
 
 
-	/* 06_Le da la vuelta a un número
+	/** 06_Le da la vuelta a un número
 	 * 
 	 * @param x un número entero positivo 
 	 * 
@@ -132,7 +132,7 @@ public class Ejercicio01_al_14_08 {
 	}
 
 
-	/* 07_Devuelve el dígito que está en la posición n de un número entero. Se empieza contando por el 0 y de izquierda a derecha.
+	/** 07_Devuelve el dígito que está en la posición n de un número entero. Se empieza contando por el 0 y de izquierda a derecha.
 	 * 
 	 * @param int x un número entero positivo 
 	 * @param int n la posicion que vamos a comprobar
@@ -149,7 +149,7 @@ public class Ejercicio01_al_14_08 {
 	}
 
 
-	/* 08_Da la posición de la primera ocurrencia de un dígito
+	/** 08_Da la posición de la primera ocurrencia de un dígito
 	 *	dentro de un número entero. Si no se encuentra, devuelve -1.
 	 * 
 	 * @param int x un número entero positivo 
@@ -174,7 +174,7 @@ public class Ejercicio01_al_14_08 {
 		} return -1;
 	}
 
-	/* 09_Le quita a un número n dígitos por detrás (por la derecha).
+	/** 09_Le quita a un número n dígitos por detrás (por la derecha).
 	 * 
 	 * @param int x un número entero positivo 
 	 * @param int n la cantidad que vamos a quitar
@@ -192,7 +192,7 @@ public class Ejercicio01_al_14_08 {
 		return Integer.parseInt(resultado);
 	}
 
-	/* 10_Le quita a un número n dígitos por delante (por la izquierda).
+	/** 10_Le quita a un número n dígitos por delante (por la izquierda).
 	 * 
 	 * @param int x un número entero positivo 
 	 * @param int n la cantidad que vamos a quitar
@@ -210,7 +210,7 @@ public class Ejercicio01_al_14_08 {
 		return Integer.parseInt(resultado);
 	}
 
-	/* 11_Añade un dígito a un número por detrás.
+	/** 11_Añade un dígito a un número por detrás.
 	 * 
 	 * @param int x un número entero positivo 
 	 * @param int n digito que se va a pegar
@@ -225,7 +225,7 @@ public class Ejercicio01_al_14_08 {
 		return Integer.parseInt(resultado);
 	}
 
-	/* 12_Añade un dígito a un número por delante
+	/** 12_Añade un dígito a un número por delante
 	 * 
 	 * @param int x un número entero positivo 
 	 * @param int n digito que se va a pegar
@@ -239,7 +239,7 @@ public class Ejercicio01_al_14_08 {
 		return Integer.parseInt(resultado);
 	}
 
-	/* 13_Toma como parámetros las posiciones inicial y final
+	/** 13_Toma como parámetros las posiciones inicial y final
 	 *	dentro de un número y devuelve el trozo correspondiente
 	 * 
 	 * @param int x un número entero positivo 
@@ -264,7 +264,7 @@ public class Ejercicio01_al_14_08 {
 		}
 	}
 
-	/* 14_Pega dos números para formar uno.
+	/** 14_Pega dos números para formar uno.
 	 * 
 	 * @param int x un número entero positivo 
 	 * @param int u otro num entero positivo
@@ -277,6 +277,7 @@ public class Ejercicio01_al_14_08 {
 		num += u ;//concatenamos u
 		return Integer.parseInt(num);//devolvemos en int
 	}
+
 }
 
 

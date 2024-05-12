@@ -198,5 +198,16 @@ public class Methods {
         return (int)(Math.random()*(num2-num1+1))+num1;
     }
 
+    public static void imprimirArrayInt(int [] array){
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(i+" ");
+        }
+        System.out.println();
+        for (int element : array) {
+            System.out.print(element+" ");
+        }
+        System.out.println();
+    }
+
 
 }
